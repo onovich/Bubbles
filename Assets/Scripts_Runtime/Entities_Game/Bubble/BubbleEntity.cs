@@ -35,6 +35,11 @@ namespace Bubbles {
         // Pos
         public Vector2 Pos => Pos_GetPos();
 
+        // SIze
+        public Vector2 sizeOrigin;
+        public Vector2 sizeMax;
+        public Vector2 currentSize => body.localScale;
+
         // Path
         public Vector2[] path;
         public int pathLen;
@@ -52,6 +57,11 @@ namespace Bubbles {
 
         Vector2 Pos_GetPos() {
             return transform.position;
+        }
+
+        // Size
+        public void Size_Set(Vector2 size) {
+            body.localScale = size;
         }
 
         // Color

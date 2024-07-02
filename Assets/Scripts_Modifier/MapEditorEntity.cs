@@ -43,17 +43,7 @@ namespace Bubbles.Modifier {
             mapTM.gridUnit = gridUnit;
         }
 
-        void OnDrawGrid() {
-            PathFindingGizmosHelper.OnDrawGrid(gridUnit, -mapTM.mapSize / 2, mapTM.mapSize / 2);
-        }
-
-        void OnDrawObstacle() {
-            PathFindingGizmosHelper.OnDrawObstacle(mapTM.obstacleData, mapTM.obstacleDataWidth, -mapTM.mapSize / 2, gridUnit);
-        }
-
         void OnDrawGizmos() {
-            OnDrawGrid();
-            OnDrawObstacle();
         }
 
     }

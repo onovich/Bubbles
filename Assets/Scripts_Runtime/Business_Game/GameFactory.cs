@@ -51,6 +51,9 @@ namespace Bubbles {
             bubble.hp = bubble.hpMax;
             bubble.typeName = bubbleTM.typeName;
 
+            bubble.sizeOrigin = new Vector2(bubbleTM.size, bubbleTM.size);
+            bubble.sizeMax = new Vector2(bubbleTM.sizeMax, bubbleTM.sizeMax);
+
             // Rename
             bubble.gameObject.name = $"{bubble.typeName} - {bubble.entityID}";
 
