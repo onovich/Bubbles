@@ -29,12 +29,15 @@ namespace Bubbles.Modifier {
         void BakeBubbles() {
             List<Vector2> bubblePosList = new List<Vector2>();
             List<BubbleTM> bubbleList = new List<BubbleTM>();
+            List<Vector2> bubbleSizeList = new List<Vector2>();
             foreach (Transform bubble in bubbleGroup) {
                 bubblePosList.Add(bubble.position);
                 bubbleList.Add(bubble.GetComponent<BubbleEditorEntity>().GetBubbleTM());
+                bubbleSizeList.Add(bubble.GetComponent<BubbleEditorEntity>().GetSize());
             }
             mapTM.bubblePosArray = bubblePosList.ToArray();
             mapTM.bubbleArray = bubbleList.ToArray();
+            mapTM.bubbleSizeArray = bubbleSizeList.ToArray();
         }
 
         void BakeMapInfo() {

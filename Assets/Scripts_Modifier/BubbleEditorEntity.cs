@@ -15,6 +15,10 @@ namespace Bubbles.Modifier {
             return bubbleTM;
         }
 
+        public Vector2 GetSize() {
+            return transform.GetChild(0).transform.localScale;
+        }
+
         public Vector2 GetPos() {
             return transform.position;
         }

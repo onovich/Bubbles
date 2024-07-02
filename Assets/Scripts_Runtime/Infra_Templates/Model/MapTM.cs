@@ -16,6 +16,7 @@ namespace Bubbles {
         // Bubbles
         public Vector2[] bubblePosArray;
         public BubbleTM[] bubbleArray;
+        public Vector2[] bubbleSizeArray;
 
         // Camera
         public Vector2 cameraConfinerWorldMax;

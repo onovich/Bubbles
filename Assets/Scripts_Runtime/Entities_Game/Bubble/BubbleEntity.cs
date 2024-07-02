@@ -36,8 +36,6 @@ namespace Bubbles {
         public Vector2 Pos => Pos_GetPos();
 
         // SIze
-        public Vector2 sizeOrigin;
-        public Vector2 sizeMax;
         public Vector2 currentSize => body.localScale;
 
         // Path

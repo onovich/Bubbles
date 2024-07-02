@@ -17,9 +17,6 @@ namespace Bubbles {
         public GameObject deadVFX;
         public float deadVFXDuration;
 
-        public float size;
-        public float sizeMax;
-
     }
 
 }

@@ -8,12 +8,13 @@ namespace Bubbles {
 
     public static class GameBubbleDomain {
 
-        public static BubbleEntity Spawn(GameBusinessContext ctx, int typeID, Vector2 pos) {
+        public static BubbleEntity Spawn(GameBusinessContext ctx, int typeID, Vector2 pos, Vector2 size) {
             var bubble = GameFactory.Bubble_Spawn(ctx.templateInfraContext,
                                               ctx.assetsInfraContext,
                                               ctx.idRecordService,
                                               typeID,
-                                              pos);
+                                              pos,
+                                              size);
 
             ctx.bubbleRepo.Add(bubble);
             return bubble;

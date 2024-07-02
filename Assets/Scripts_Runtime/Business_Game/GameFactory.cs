@@ -30,7 +30,8 @@ namespace Bubbles {
                                  AssetsInfraContext assetsInfraContext,
                                  IDRecordService idRecordService,
                                  int typeID,
-                                 Vector2 pos) {
+                                 Vector2 pos,
+                                 Vector2 size) {
 
             var has = templateInfraContext.Bubble_TryGet(typeID, out var bubbleTM);
             if (!has) {
@@ -51,14 +52,14 @@ namespace Bubbles {
             bubble.hp = bubble.hpMax;
             bubble.typeName = bubbleTM.typeName;
 
-            bubble.sizeOrigin = new Vector2(bubbleTM.size, bubbleTM.size);
-            bubble.sizeMax = new Vector2(bubbleTM.sizeMax, bubbleTM.sizeMax);
-
             // Rename
             bubble.gameObject.name = $"{bubble.typeName} - {bubble.entityID}";
 
             // Set Pos
             bubble.Pos_SetPos(pos);
+
+            // Set Size
+            bubble.Size_Set(size);
 
             // Set Mod
             var modPrefab = bubbleTM.mod;

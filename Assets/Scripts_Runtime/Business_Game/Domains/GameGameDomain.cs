@@ -23,10 +23,12 @@ namespace Bubbles {
             // Bubble
             var bubblePosArr = mapTM.bubblePosArray;
             var bubbleArr = mapTM.bubbleArray;
+            var bubbleSizeArr = mapTM.bubbleSizeArray;
             for (int i = 0; i < bubblePosArr.Length; i++) {
                 var pos = bubblePosArr[i];
                 var bubbleTM = bubbleArr[i];
-                var bubble = GameBubbleDomain.Spawn(ctx, bubbleTM.typeID, pos);
+                var size = bubbleSizeArr[i];
+                var bubble = GameBubbleDomain.Spawn(ctx, bubbleTM.typeID, pos, size);
             }
 
             // Camera
