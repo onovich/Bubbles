@@ -7,6 +7,9 @@ namespace Bubbles {
     public class InputEntity {
 
         public Vector2 moveAxis;
+        public Vector2 mouseScreenPos;
+        public Vector2 mouseWorldPos;
+        public bool isLeftMouseClick;
 
         InputKeybindingComponent keybindingCom;
 
@@ -28,6 +31,11 @@ namespace Bubbles {
             if (keybindingCom.IsKeyDown(InputKeyEnum.MoveDown)) {
                 moveAxis.y = -1;
             }
+
+            mouseScreenPos = Input.mousePosition;
+            mouseWorldPos = camera.ScreenToWorldPoint(mouseScreenPos);
+
+            isLeftMouseClick = Input.GetMouseButtonDown(0);
         }
 
         public void Keybinding_Set(InputKeyEnum key, KeyCode[] keyCodes) {
@@ -36,6 +44,7 @@ namespace Bubbles {
 
         public void Reset() {
             moveAxis = Vector2.zero;
+            isLeftMouseClick = false;
         }
 
     }

@@ -29,14 +29,11 @@ namespace Bubbles {
             if (fsm.idle_isEntering) {
                 fsm.idle_isEntering = false;
             }
-            var input = ctx.inputEntity;
-            if (input.moveAxis == Vector2.zero) {
-                return;
-            }
 
             // Move
             GameBubbleDomain.ApplyDamage(ctx, bubble);
             GameBubbleDomain.ApplyConstraint(ctx, bubble);
+            GameBubbleDomain.MouseOnBubble(ctx, bubble);
         }
 
         static void FixedTickFSM_Dead(GameBusinessContext ctx, BubbleEntity bubble, float dt) {
