@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb11335240b544e63abb305dccd0a418, type: 3}
+  m_Name: TM_GameConfig
+  m_EditorClassIdentifier: 
+  gameResetEnterTime: 1
+  ownerRoleTypeID: 1
+  originalMapTypeID: 1
+  gridMat: {fileID: 2100000, guid: 8371e540844864e8bb40292bf72c4d43, type: 2}
+  gridColor: {r: 0, g: 0, b: 1, a: 1}
+  gridThickness: 1
+  obstacleMat: {fileID: 2100000, guid: 8371e540844864e8bb40292bf72c4d43, type: 2}
+  obstacleColor: {r: 0, g: 0, b: 1, a: 1}
+  pathMat: {fileID: 2100000, guid: 8371e540844864e8bb40292bf72c4d43, type: 2}
+  pathColor: {r: 1, g: 0, b: 0, a: 1}
+  pathThickness: 1
+  cameraDeadZoneNormalizedSize: {x: 0, y: 0}
+  cameraShakeFrequency_roleDamage: 6
+  cameraShakeAmplitude_roleDamage: 0.2
+  cameraShakeDuration_roleDamage: 0.1
+  cameraShakeEasingType_roleDamage: 1
+  cameraShakeEasingMode_roleDamage: 0

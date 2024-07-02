@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a1e22956f2334251b773b2a1967c65b, type: 3}
+  m_Name: TM_Map_001
+  m_EditorClassIdentifier: 
+  typeID: 1
+  mapSize: {x: 18, y: 10}
+  gridUnit: 1
+  obstacleData: 010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101000101010101010101010101010101010101000101010101010101010101010101010101000101010101010101010101010101010101000101010101010101010101010101010101010101010101010101010101
+  obstacleDataWidth: 18
+  ownerSpawnPoint: {x: 0, y: 0}
+  enemyPosArray:
+  - {x: -9, y: 4}
+  - {x: -9, y: -5}
+  enemyArray:
+  - {fileID: 11400000, guid: e47683d3f5fd44fc08251f0285efe985, type: 2}
+  - {fileID: 11400000, guid: e47683d3f5fd44fc08251f0285efe985, type: 2}
+  cameraConfinerWorldMax: {x: 30, y: 20}
+  cameraConfinerWorldMin: {x: -30, y: -20}
